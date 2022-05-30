@@ -187,7 +187,7 @@ embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast
 	btn.addEventListener('click', function onClick() {
 	btn.style.backgroundColor = '#f00';
 	btn.style.color = 'white';
-	document.getElementById("generate_coupon").disabled = true;
+	document.getElementById("generate_coupon").disabled = false;
 	setTimeout(function(){
     btn.style.backgroundColor = '#00bfff';
     btn.style.color = 'white';
@@ -202,7 +202,6 @@ function data_handler(ev) {
   if (!ev.success) {
     status.style.color = "red";
     status.innerText = "zablokowany";
-    return button.setAttribute("disabled", "");
   };
   const iCount = parseInt(count.innerText) + 1;
   count.innerText = iCount;
