@@ -187,14 +187,9 @@ embed[type="application/pdf"][src="about:blank"] { filter: invert(100%) contrast
 
 	const btn = document.getElementById('generate_coupon');
 	btn.addEventListener('click', function onClick() {
-	btn.style.backgroundColor = '#f00';
-	btn.style.color = 'white';
-	document.getElementById("generate_coupon").disabled = true;
-	setTimeout(function(){
     btn.style.backgroundColor = '#00bfff';
     btn.style.color = 'white';
     document.getElementById("generate_coupon").disabled = false;
-  }, 600);
 });
 
 function data_handler(ev) {
